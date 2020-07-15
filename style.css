@@ -221,7 +221,11 @@ footer {
 
   footer {
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
 
   .form {
     flex-direction: column;
@@ -235,6 +239,7 @@ footer {
 
   .okbe-logo {
     width: 14rem;
+    margin-bottom: 2rem;
   }
 
   .social a svg {
