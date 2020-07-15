@@ -113,8 +113,8 @@ main {
   padding: 1rem;
 }
 
-.form__input:active, .form__input:focus{
-  border: 1rem solid red;
+.form__input:active, .form__input:focus {
+  border: .3rem solid blue;
 }
 
 .form__btn{
@@ -122,12 +122,11 @@ main {
   background-color: #828282;;
   color: white;
   cursor: pointer;
-  /* flex-basis: fit-content; */
   padding: 1rem 2.5rem;
 }
 
 .form__btn:hover {
-  background-color: greenyellow;
+  background-color: blue;
 }
 
 footer {
@@ -154,7 +153,7 @@ footer {
 }
 
 .social svg:hover path {
-  fill: greenyellow;
+  fill: blue;
 }
 
 @media (max-width: 800px) {
@@ -170,6 +169,14 @@ footer {
     font-size: 4rem;
   }
 
+  footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+
   .form {
     width: 100%;
   }
@@ -177,15 +184,16 @@ footer {
 
 @media (max-width: 650px) {
   main {
-    width: 40rem;
+    width: 50rem;
   }
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   p {
@@ -199,33 +207,39 @@ footer {
   }
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 6rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-  form {
+
+  p {
+    font-size: 1.8rem;
+    width: 90vw;
+  }
+
+  footer {
+    padding: 0 1rem;
+  }
+
+  .form {
     flex-direction: column;
+    padding-top: 3rem;
+    width: 90vw;
   }
-  form input[type="email"] {
+  
+  form .form__input {
     margin-bottom: 0.5rem;
   }
+
   .okbe-logo {
-    width: 18rem;
-    bottom: 1rem;
-    left: calc(50% - 9rem);
+    width: 14rem;
+  }
+
+  .social a svg {
+    width: 3.4rem;
+    height: 3.4rem;
   }
 }
 
-@media (max-height: 560px) {
-  .okbe-logo {
-    display: none;
-  }
-}
-
-@media (max-width: 360px) {
-  main {
-    width: 90%;
-  }
-}
