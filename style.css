@@ -114,7 +114,7 @@ main {
 }
 
 .form__input:active, .form__input:focus {
-  border: .3rem solid blue;
+  border: .3rem solid #56CCF2;
 }
 
 .form__btn{
@@ -126,7 +126,7 @@ main {
 }
 
 .form__btn:hover {
-  background-color: blue;
+  background-color: #56CCF2;
 }
 
 footer {
@@ -153,7 +153,7 @@ footer {
 }
 
 .social svg:hover path {
-  fill: blue;
+  fill: #56CCF2;
 }
 
 @media (max-width: 800px) {
